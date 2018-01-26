@@ -1,5 +1,9 @@
-node {
-	checkout scm
-	sh 'ls -l'
-	sh 'env'
+pipeline {
+	script {
+		node {
+			checkout scm
+			sh 'ls -l'
+			sh 'env'
+		}
+	}
 }
